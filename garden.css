@@ -1,44 +1,159 @@
+
+
 .garden {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin-top: 40px;
+    visibility: hidden;
 }
 
-#grass {
-    overflow-x: hidden;
+.mobile-garden {
+    visibility: visible;
+}
+
+.grass {
+    visibility: hidden;
+}
+
+.mob-grass {
+    visibility: visible;
     width: 100%;
+    height: auto;
     margin-top: 0;
+    margin-left: -3px;
 }
 
-#html {
+
+.mob-html {
 bottom: 0px;
-width: 200px;
+width: 100px;
 height: auto;
 }
 
-#js {
-    width: 200px;
+.mob-js {
+    width: 100px;
     height: auto;  
 }
 
-#css {
-    width: 200px;
+.mob-css {
+    width: 100px;
     height: auto;   
 }
 
-#react {
-    width: 200px;
+.mob-react {
+    width: 100px;
     height: auto;
 }
 
-#node {
-    width: 200px;
+.mob-node {
+    width: 100px;
 height: auto;
 }
 
-#sql {
-    width: 200px;
+.mob-sql {
+    width: 100px;
 height: auto;
+
+}
+
+
+
+
+@media all and (min-width: 920px) {
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .garden {
+        visibility: visible;
+        background-image: url("skill-garden/sky.svg");
+        background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        perspective: 1px;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding-top: 50px;
+        margin-bottom: 0px;
+         /* display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-top: 40px;  */
+    }   
+
+    .layer {
+        /* Positioning is important for good parallax ... */
+        position: absolute;
+        /* top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0; */
+        /* ... and so is adding some extra space for scrolling ... */
+        padding-top: 50vh;
+        padding-bottom: 50vh;
+      
+      }
+    
+    .mobile-garden {
+        visibility: hidden;
+        height: 0px;
+    }
+
+    .mob-grass {
+        visibility: hidden;
+    }
+
+    .grass {
+        visibility: visible;
+        width: 100%;
+        position: relative;
+        margin-top: -70px;
+        /* margin-left: -3px; */
+    }
+
+
+.html {
+    width: 150px;
+    height: auto;
+    transform: translateZ(-6px) scale(7)
+
+    }
+    
+    .js {
+        width: 150px;
+        height: auto;  
+    transform: translateZ(0)
+
+    }
+    
+    .css {
+        width: 150px;
+        height: auto;  
+    transform: translateZ(-1px) scale(2)
+        
+    }
+    
+    .react {
+        width: 150px;
+        height: auto;
+    transform: translateZ(-2px) scale(3)
+         
+
+    }
+    
+    .node {
+        width: 150px;
+    height: auto;
+    transform: translateZ(-4px) scale(5)
+     
+
+    }
+    
+    .sql {
+        width: 150px;
+    height: auto;
+    transform: translateZ(-5) scale(6)
+    
+    }
 
 }
