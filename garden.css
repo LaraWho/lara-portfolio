@@ -1,0 +1,44 @@
+.garden {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#grass {
+    overflow-x: hidden;
+    width: 100%;
+    margin-top: 0;
+}
+
+#html {
+bottom: 0px;
+width: 200px;
+height: auto;
+}
+
+#js {
+    width: 200px;
+    height: auto;  
+}
+
+#css {
+    width: 200px;
+    height: auto;   
+}
+
+#react {
+    width: 200px;
+    height: auto;
+}
+
+#node {
+    width: 200px;
+height: auto;
+}
+
+#sql {
+    width: 200px;
+height: auto;
+
+}

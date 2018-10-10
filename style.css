@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background:#510909; */
+    /* background: rgb(231, 195, 195, 0.8); */
+    /* font-family: 'Fredericka the Great', cursive; */
+    letter-spacing: 3px;
+    color: #333;
+}
+
+.tardis {
+  margin: 20;
+  margin-top: 0;
+  text-align: center;
+}
+/* iframe {
+  margin: 10px;
+} */
+#outer-box {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+  }
+  
+  #outer-box img {
+    width: 100%;
+    height: auto;
+    filter: blur(4px);
+    border: none;
+  }
+  
+  #outer-box #inner-box {
+    /* background: #DD7878; */
+    /* background: #780808; */
+    background: linear-gradient(to bottom, #780808, #510909);
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+  }
+
+  #outer-box #inner-box h1 {
+    font-family: 'Chicle', cursive;
+    color: rgb(255, 255, 255);
+    /* line-height: 80px; */
+    /* font-family: 'Special Elite', cursive; */
+    text-align: center;
+    font-size: 48px;
+    margin-top: 20%;
+    opacity: 1;
+
+  }
+  
+
+  #outer-box:hover #inner-box {
+    opacity: .5;
+    transition: opacity .5s;
+  }
+
+
+  .about-box {
+      height: 350px;
+      width: 100%;
+      
+      /* background-color: #780808; */
+      /* background: linear-gradient(to bottom, #780808, rgb(231, 195, 195)); */
+      /* background: linear-gradient(to bottom, #206040, #40bf80); */
+
+      /* opacity: 0.8; */
+  }
+
+  h2 {
+    /* font-family: 'Special Elite', cursive; */
+    font-family: 'Chicle', cursive;
+    text-align: center;
+    padding-top: 60px;
+    /* color: rgb(250, 236, 236); */
+    font-size: 32px;
+    margin: 0 auto;
+    color: rgba(51,51,51, 0.9);
+
+  }
+
+  .ipa {
+    font-family: 'Voces', cursive;
+    color: rgb(255, 255, 255);
+    
+    opacity: 1;
+    text-align: center;
+    font-size: 48px;
+    margin-top: 20px;
+  }
+
+  .about p {
+    margin: 0 auto;
+    max-width: 50em;
+    padding-top: 2em;
+    line-height: 1.5em;
+    color: rgba(51,51,51, 0.8);
+    font-family: 'Open Sans', sans-serif;
+  }
