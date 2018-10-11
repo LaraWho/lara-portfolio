@@ -68,7 +68,7 @@ height: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-        perspective: 1px;
+        perspective: 2px;
         height: 100vh;
         overflow-x: hidden;
         overflow-y: scroll;
@@ -83,15 +83,19 @@ height: auto;
     .layer {
         /* Positioning is important for good parallax ... */
         position: absolute;
-        /* top: 0;
-        left: 0;
+        top: 0;
+        left: 100;
         right: 0;
         bottom: 0;
-        padding: 0; */
+        padding: 0;
         /* ... and so is adding some extra space for scrolling ... */
         padding-top: 50vh;
         padding-bottom: 50vh;
       
+      }
+
+      .layer::after {
+          transform: rotateZ(-1px) scale(1.5)
       }
     
     .mobile-garden {
@@ -111,48 +115,58 @@ height: auto;
         /* margin-left: -3px; */
     }
 
+    .all {
+        margin-top: 400px;
+        /* margin-bottom: 0; */
+        width: 100%;
+    }
+
 
 .html {
     width: 150px;
     height: auto;
-    transform: translateZ(-6px) scale(7)
+    transform: translateZ(-8) scale(7);
+    position: relative;
 
     }
     
     .js {
         width: 150px;
         height: auto;  
-    transform: translateZ(0)
+    transform: translateZ(0);
+    position: relative;
 
     }
     
     .css {
         width: 150px;
         height: auto;  
-    transform: translateZ(-1px) scale(2)
+    transform: translateZ(-2) scale(2);
+    position: relative;
         
     }
     
     .react {
         width: 150px;
         height: auto;
-    transform: translateZ(-2px) scale(3)
+    transform: translateZ(-3) scale(3);
+    position: relative;
          
-
     }
     
     .node {
         width: 150px;
     height: auto;
-    transform: translateZ(-4px) scale(5)
-     
+    transform: translateZ(-4) scale(4);
+    position: relative;
 
     }
     
     .sql {
         width: 150px;
     height: auto;
-    transform: translateZ(-5) scale(6)
+    transform: translateZ(-5) scale(6);
+    position: relative;
     
     }
 
